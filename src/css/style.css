@@ -1,0 +1,7 @@
+
+body{
+    background-image: url(../assets/images/bg-repeat.jpg);
+    background-repeat: repeat no-repeat ;
+    background-size: 40rem 100vh;
+    
+}
