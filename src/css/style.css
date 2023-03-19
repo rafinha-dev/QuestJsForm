@@ -3,5 +3,79 @@ body{
     background-image: url(../assets/images/bg-repeat.jpg);
     background-repeat: repeat no-repeat ;
     background-size: 40rem 100vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+
+    /* max-width: 190rem; */
     
+    
+}
+.head{
+    max-width: 50vh;
+    /* background-color: red; */
+    max-width: 29.5rem;
+}
+.description, .title{
+    
+    color: #fff;
+    margin-bottom: 1.1rem;
+}
+.title{
+    font-size: 2.3rem;
+    font-weight: 900;
+    line-height: 2rem;
+}
+.description{
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+}
+#form{
+    background-color: #fff;
+    min-width: 34rem;
+    min-height: 37.8rem;
+    padding: 2.1rem;
+}
+ul{
+    /* background-color: red; */
+    height: 100%;
+}
+input, #mensagem{
+    height: 3.5rem;
+    margin-bottom: 1.5rem;
+    border: 0.1rem solid #000000;
+    color: #A8A8A8;
+    padding: 0.9rem 1rem 0.9rem 1rem;
+    
+}
+input::placeholder, #mensagem::placeholder{
+    color: #A8A8A8;
+}
+
+input, .btn, #mensagem{
+    border-radius: 0.5rem;
+    width: 100%;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+#mensagem{
+    height: 10rem;
+    margin-bottom: 0.7rem;
+    resize: none;
+    
+    /* background-color: red; */
+}
+form ul li p{
+    font-size: 1.5rem;
+}
+.btn{
+    background: #3CCC87;
+    height: 4.1rem;
+    color: #fff;
+    
+    
+    border-style: none;
+    margin-top: 2rem;
 }

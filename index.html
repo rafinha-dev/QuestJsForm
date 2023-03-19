@@ -4,43 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="./src/css/reset.css" /> -->
-    <!-- <link rel="stylesheet" href="./src/css/style.css" /> -->
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
     <title>Formulário</title>
   </head>
   <body>
+    
     <head>
-      <h1>
-        Ficou com alguma dúvida?
-        <br />
-        Nos mande uma mensagem
-      </h1>
-      <p>
-        Caso tenha ficado com qualquer dúvida basta nos enviar uma mensagem e
-        entraremos em contato em menos de 24h.
-      </p>
+      <div class="head">
+        <h1 class="title">
+          Ficou com dúvida?
+          <br />
+          Nos mande uma mensagem!
+        </h1>
+        <p class="description">
+          Caso tenha ficado com qualquer dúvida basta nos enviar uma mensagem e
+          entraremos em contato em menos de 24h.
+        </p>
+      </div>
     </head>
-    <form action="">
-        <ul>
-            <li>
-                <input type="text" name="" id="name" placeholder="Nome completo *">
-            </li>
-            <li>
-                <input type="text" name="" id="email" placeholder="Email *">
-            </li>
-            <li>
-                <input type="tel" name="" id="telephone" placeholder="Telefone *">
-            </li>
-            <li>
-                <input type="text" name="" id="Mensagem" placeholder="Mensagem *">
-            </li>
-            <li>
-                <p>*campos obrigatórios</p>
-            </li>
-            <li>
-                <button>Enviar</button>
-            </li>
-        </ul>
+    <form action="" id="form">
+      <ul >
+        <li>
+          <input type="text" name="" id="name" placeholder="Nome completo *" />
+        </li>
+        <li>
+          <input type="text" name="" id="email" placeholder="Email *" />
+        </li>
+        <li>
+          <input type="tel" name="" id="telephone" placeholder="Telefone *" />
+        </li>
+        <li>
+          <textarea name="" cols="30" rows="10" id="mensagem" placeholder="Mensagem *"></textarea>
+        </li>
+        <li>
+          <p>*campos obrigatórios</p>
+        </li>
+        <li>
+          <button class="btn">Enviar</button>
+        </li>
+      </ul>
     </form>
   </body>
 </html>
