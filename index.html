@@ -27,19 +27,47 @@
 
     <!-- /* ========== FORMULARIO ============ */ -->
 
-    <form action="" id="form" class="form">
+    <!-- method="post"  -->
+    <!-- action="./src/js/index.js"  -->
+    <form 
+      id="form" 
+      class="form">
       <ul >
         <li>
-          <input class="input-color " type="text" name="" id="name" placeholder="Nome completo *" />
+          <input 
+            id="name" 
+            class="input-color " 
+            name="" 
+            type="text" 
+            pattern="\s"
+            placeholder="Nome completo *" />
+          <label 
+            for="input-color" 
+            class="label">
+          </label>
+        </li>
+        <li>
+          <input 
+            id="email" 
+            class="input-color" 
+            type="text" 
+            name="" 
+            placeholder="Email *" 
+            />
           <label for="input-color" class="label"></label>
         </li>
         <li>
-          <input class="input-color" type="text" name="" id="email" placeholder="Email *" />
-          <label for="input-color" class="label"></label>
-        </li>
-        <li>
-          <input  class="input-color" type="tel" name="" id="telephone" placeholder="Telefone *" />
-          <label for="input-color" class="label"></label>
+          <!-- pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"  -->
+          <input  
+            id="telephone" 
+            class="input-color" 
+            type="tel"  
+            name="" 
+            placeholder="Telefone *" />
+          <label 
+            for="input-color" 
+            class="label">
+          </label>
         </li>
         <li>
           <textarea class="area input-color" name="" cols="30" rows="10" id="msg" placeholder="Mensagem *">
@@ -50,7 +78,7 @@
           <p>*campos obrigatórios</p>
         </li>
         <li>
-          <input type="submit"  value="Enviar" class="btn"></input>
+          <input type="submit"  value="Enviar" class="btn" id="btn"></input>
         </li>
       </ul>
     </form>
