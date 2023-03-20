@@ -1,0 +1,11 @@
+.validation-true{
+    border: 0.1rem solid #00C22B;    
+}
+.validation-false{
+    border: 0.1rem solid #F52E2E;
+}
+label{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: red;
+}

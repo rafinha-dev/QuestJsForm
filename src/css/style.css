@@ -9,17 +9,14 @@ body{
     align-items: center;
     min-height: 100vh;
 
-    /* max-width: 190rem; */
-    
-    
+    /* max-width: 190rem; por que não centraliza terei que criar uma nova div ou assim está bom?*/   
 }
+
+/* ============ CABEÇALHO =================== */
 .head{
-    max-width: 50vh;
-    /* background-color: red; */
     max-width: 29.5rem;
 }
 .description, .title{
-    
     color: #fff;
     margin-bottom: 1.1rem;
 }
@@ -32,50 +29,64 @@ body{
     font-size: 1.5rem;
     line-height: 1.8rem;
 }
-#form{
+
+/* ========== FORMULARIO ============ */
+.form{
     background-color: #fff;
     min-width: 34rem;
     min-height: 37.8rem;
     padding: 2.1rem;
 }
 ul{
-    /* background-color: red; */
     height: 100%;
 }
-input, #mensagem{
+input, .area{
     height: 3.5rem;
-    margin-bottom: 1.5rem;
     border: 0.1rem solid #000000;
     color: #A8A8A8;
     padding: 0.9rem 1rem 0.9rem 1rem;
     
 }
-input::placeholder, #mensagem::placeholder{
-    color: #A8A8A8;
+.form ul li{
+    margin-top: 1.5rem;
 }
-
-input, .btn, #mensagem{
+.form ul li:last-child{
+    margin-bottom: 0.7rem;
+}
+input, .btn, .area{
     border-radius: 0.5rem;
     width: 100%;
     font-weight: 700;
     font-size: 1.5rem;
 }
-#mensagem{
-    height: 10rem;
-    margin-bottom: 0.7rem;
-    resize: none;
-    
-    /* background-color: red; */
+input::placeholder, .area::placeholder{
+    color: #A8A8A8;
 }
-form ul li p{
+#msg{
+    height: 10rem;
+    resize: none;
+}
+
+.form ul li p{
     font-size: 1.5rem;
 }
+
 .btn{
     background: #3CCC87;
     height: 4.1rem;
     color: #fff;
     
-    
     border-style: none;
     margin-top: 2rem;
+}
+
+@media (min-width: 1400px){
+    body{
+        margin: 0 15%;
+    }
+}
+@media (min-width: 1900px){
+    body{
+        margin: 0 22%;
+    }
 }

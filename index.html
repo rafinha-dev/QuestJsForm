@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/validation.css">
     <title>Formulário</title>
   </head>
   <body>
-    
-    <head>
-      <div class="head">
+
+    <!-- /* ============ CABEÇALHO =================== */ -->
+
+      <header class="head">
         <h1 class="title">
           Ficou com dúvida?
           <br />
@@ -21,29 +23,38 @@
           Caso tenha ficado com qualquer dúvida basta nos enviar uma mensagem e
           entraremos em contato em menos de 24h.
         </p>
-      </div>
-    </head>
-    <form action="" id="form">
+      </header>
+
+    <!-- /* ========== FORMULARIO ============ */ -->
+
+    <form action="" id="form" class="form">
       <ul >
         <li>
-          <input type="text" name="" id="name" placeholder="Nome completo *" />
+          <input class="input-color " type="text" name="" id="name" placeholder="Nome completo *" />
+          <label for="input-color" class="label"></label>
         </li>
         <li>
-          <input type="text" name="" id="email" placeholder="Email *" />
+          <input class="input-color" type="text" name="" id="email" placeholder="Email *" />
+          <label for="input-color" class="label"></label>
         </li>
         <li>
-          <input type="tel" name="" id="telephone" placeholder="Telefone *" />
+          <input  class="input-color" type="tel" name="" id="telephone" placeholder="Telefone *" />
+          <label for="input-color" class="label"></label>
         </li>
         <li>
-          <textarea name="" cols="30" rows="10" id="mensagem" placeholder="Mensagem *"></textarea>
+          <textarea class="area input-color" name="" cols="30" rows="10" id="msg" placeholder="Mensagem *">
+          </textarea>
+          <label for="input-color" class="label"></label>
         </li>
         <li>
           <p>*campos obrigatórios</p>
         </li>
         <li>
-          <button class="btn">Enviar</button>
+          <input type="submit"  value="Enviar" class="btn"></input>
         </li>
       </ul>
     </form>
+
+    <script src="./src/js/index.js"></script>
   </body>
 </html>
