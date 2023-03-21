@@ -2,7 +2,7 @@
 body{
     background-image: url(../assets/images/bg-repeat.jpg);
     background-repeat: repeat no-repeat ;
-    background-size: 40rem 100vh;
+    background-size: 4rem 100%;
 
     display: flex;
     justify-content: space-around;
@@ -92,5 +92,22 @@ input::placeholder, .area::placeholder{
 @media (min-width: 1900px){
     body{
         padding: 0 22%;
+    }
+}
+@media(max-width: 360px){
+    .form{
+        max-width: 30rem;
+        min-width: 30rem;
+    }
+
+}
+@media (max-width: 767px){
+    body{
+        flex-direction: column;
+        gap: 3rem;
+        padding-top: 10%;
+    }
+    .form{
+        margin-bottom: 10%;
     }
 }
