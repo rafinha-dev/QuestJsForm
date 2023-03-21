@@ -34,12 +34,12 @@
       class="form">
       <ul >
         <li>
+          <!-- pattern="\s" -->
           <input 
             id="name" 
             class="input-color " 
             name="" 
             type="text" 
-            pattern="\s"
             placeholder="Nome completo *" />
           <label 
             for="input-color" 
@@ -47,11 +47,12 @@
           </label>
         </li>
         <li>
+          <!-- pattern="/^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,}$/" -->
           <input 
             id="email" 
             class="input-color" 
             type="text" 
-            name="" 
+            name=""
             placeholder="Email *" 
             />
           <label for="input-color" class="label"></label>
