@@ -16,6 +16,32 @@ inputs[0].addEventListener('change', () =>{
         }
 })
 
+inputs[3].addEventListener('change', () =>{
+    let content = inputs[3].value
+    let contentNumber = content.split(' ')
+    contentNumber = contentNumber.filter(item => item !== "")
+
+    if(contentNumber.length < 2){
+        validationFalse()    
+    }else{
+        validationTrue()
+    }
+})
+
+inputs[1].addEventListener('change', () =>{ 
+    const email = inputs[1].value
+    console.log(email)
+    const emailRegex = new RegExp(
+        /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,}$/
+    )
+    if(emailRegex.test(email)){
+        validationTrue()
+    }else{
+        validationFalse()
+    }
+
+
+    })
 // Ao enviar o formulário, se o campo obrigatório não for preenchido a borda do input deve ficar vermelha e uma mensagem "campo obrigatório" também em vermelho deve aparecer embaixo do campo.
 function validationFalse(){
 label.forEach(i =>{
@@ -43,6 +69,7 @@ function colorTrue(){
     inputs.classList.add("validation-true")
     })
     }
+
 
 form.addEventListener('submit', (event) => {
     // event.preventDefault()
