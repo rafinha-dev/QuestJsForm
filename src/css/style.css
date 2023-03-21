@@ -32,7 +32,7 @@ body{
 
 /* ========== FORMULARIO ============ */
 .form{
-    background-color: #fff;
+    background-color: #FFFFFF;
     min-width: 34rem;
     max-width: 34rem;
     min-height: 37.8rem;
@@ -86,11 +86,11 @@ input::placeholder, .area::placeholder{
 
 @media (min-width: 1400px){
     body{
-        margin: 0 15%;
+        padding: 0 15%;
     }
 }
 @media (min-width: 1900px){
     body{
-        margin: 0 22%;
+        padding: 0 22%;
     }
 }
