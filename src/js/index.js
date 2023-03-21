@@ -10,29 +10,27 @@ inputs[0].addEventListener('change', () =>{
         nameNumber = nameNumber.filter(item => item !== "")
 
         if(nameNumber.length < 2){
-            validationTrue()
-            
+            validationFalse()    
         }else{
-            validationFalse()
+            validationTrue()
         }
 })
 
-
 // Ao enviar o formulário, se o campo obrigatório não for preenchido a borda do input deve ficar vermelha e uma mensagem "campo obrigatório" também em vermelho deve aparecer embaixo do campo.
-function validationTrue(){
+function validationFalse(){
 label.forEach(i =>{
     i.innerHTML = 'campo obrigatório'
     colorFalse()
 })
 }
 function colorFalse(){
-    inputs.forEach((inputs) =>{
+    inputs.forEach(inputs =>{
     inputs.classList.remove("validation-true")
-inputs.classList.add("validation-false")
+    inputs.classList.add("validation-false")
 })
 }
 
-function validationFalse(){
+function validationTrue(){
     // Quando um campo estiver preenchido a borda do input deve ficar verde
     label.forEach(i =>{
     i.innerHTML = ""
