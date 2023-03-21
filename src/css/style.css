@@ -34,6 +34,7 @@ body{
 .form{
     background-color: #fff;
     min-width: 34rem;
+    max-width: 34rem;
     min-height: 37.8rem;
     padding: 2.1rem;
 }
@@ -43,8 +44,9 @@ ul{
 input, .area{
     height: 3.5rem;
     border: 0.1rem solid #000000;
-    color: #A8A8A8;
+    /* color: #A8A8A8; */
     padding: 0.9rem 1rem 0.9rem 1rem;
+    font-size: 1.5rem;
     
 }
 .form ul li{
@@ -56,8 +58,10 @@ input, .area{
 input, .btn, .area{
     border-radius: 0.5rem;
     width: 100%;
-    font-weight: 700;
     font-size: 1.5rem;
+}
+.btn{
+    font-weight: 700;
 }
 input::placeholder, .area::placeholder{
     color: #A8A8A8;
