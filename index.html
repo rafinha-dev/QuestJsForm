@@ -10,9 +10,6 @@
     <title>Formulário</title>
   </head>
   <body>
-
-    <!-- /* ============ CABEÇALHO =================== */ -->
-
       <header class="head">
         <h1 class="title">
           Ficou com dúvida?
@@ -24,9 +21,6 @@
           entraremos em contato em menos de 24h.
         </p>
       </header>
-
-    <!-- /* ========== FORMULARIO ============ */ -->
-
     <!-- method="post"  -->
     <!-- action="./src/js/index.js"  -->
     <form 
@@ -40,9 +34,10 @@
             class="input-color " 
             name="" 
             type="text" 
-            placeholder="Nome completo *" />
+            placeholder="Nome completo *"
+            required />
           <label 
-            for="input-color" 
+            for="name" 
             class="label">
           </label>
         </li>
@@ -51,11 +46,13 @@
           <input 
             id="email" 
             class="input-color" 
-            type="text" 
+            type="email" 
             name=""
-            placeholder="Email *" 
+            placeholder="Email *"
+            required
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
             />
-          <label for="input-color" class="label"></label>
+          <label for="email" class="label"></label>
         </li>
         <li>
           <!-- pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"  -->
@@ -64,16 +61,19 @@
             class="input-color" 
             type="tel"  
             name="" 
-            placeholder="Telefone *" />
+            placeholder="Telefone *"
+            pattern="[1-9]*"
+            maxlength="15"
+            required />
           <label 
-            for="input-color" 
+            for="telephone" 
             class="label">
           </label>
         </li>
         <li>
-          <textarea class="area input-color" name="" cols="30" rows="10" id="msg" placeholder="Mensagem *">
-          </textarea>
-          <label for="input-color" class="label"></label>
+          <textarea class="area input-color" name="" cols="30" rows="10" id="msg" placeholder="Mensagem *" required></textarea>
+
+          <label for="msg" class="label"></label>
         </li>
         <li>
           <p>*campos obrigatórios</p>
