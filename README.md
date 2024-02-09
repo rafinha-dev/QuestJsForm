@@ -25,7 +25,7 @@ A lógica de programação do projeto que a principio parece complicada, só se 
 tornando possível usar um listner dentro dele que já percorreu o array.
 Outro problema seria inserir o label nos campos corretos. Mas que com o método **nextElementSibling()** torna possível acessar o elemento filho sem criar um novo **forEach()** para o array de **label** dos elementos de **input**.
 
- 
+ ![](src/assets/images/quest.gif)
 
 ## Tecnologias utilizadas
 - [x] HTML
